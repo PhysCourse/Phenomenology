@@ -19,7 +19,7 @@ window.MathJax = {
   },
   options: {
     ignoreHtmlClass: ".*|",
-    processHtmlClass: "arithmatex|md-ellipsis" // md-ellipsis - to enable mathjax in toc
+    processHtmlClass: "arithmatex|md-ellipsis|innermath" // md-ellipsis - to enable mathjax in toc
   }
 };
 

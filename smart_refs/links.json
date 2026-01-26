@@ -1,6 +1,14 @@
 {
     "links": {
-        "KaonDecay/CKM/L1": []
+        "KaonDecay/FCNC/L3": [],
+        "KaonDecay/FCNC/L2_1": [
+            {
+                "dest": "this/KaonDecay/FCNC/L2",
+                "type": 0
+            }
+        ],
+        "KaonDecay/CKM/L1": [],
+        "KaonDecay/FCNC/L2": []
     },
     "navigation": {
         "title": "Феноменология элементарных частиц",
@@ -22,6 +30,23 @@
                             {
                                 "title": "Кварки, калибровочные группы и матрица СКМ",
                                 "path": "KaonDecay/CKM/L1"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "FCNC процессы и ЭТП",
+                        "items": [
+                            {
+                                "title": "Эффективная теория поля",
+                                "path": "KaonDecay/FCNC/L2"
+                            },
+                            {
+                                "title": "FCNC процессы",
+                                "path": "KaonDecay/FCNC/L2_1"
+                            },
+                            {
+                                "title": "Перенормировка локальных операторов",
+                                "path": "KaonDecay/FCNC/L3"
                             }
                         ]
                     }
