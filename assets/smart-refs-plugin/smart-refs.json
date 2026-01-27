@@ -1,0 +1,108 @@
+{
+    "content": [
+        {
+            "alias": "this",
+            "url": "",
+            "repo": "github.com/PhysCourse/Phenomenology",
+            "title": "Феноменология элементарных частиц",
+            "items": [
+                {
+                    "title": null,
+                    "path": "Нейтрино и осцилляции"
+                },
+                {
+                    "title": null,
+                    "path": "Киральная теория возмущения"
+                },
+                {
+                    "title": "CP-нарушения",
+                    "items": [
+                        {
+                            "title": "CKM матрица",
+                            "items": [
+                                {
+                                    "title": "Кварки, калибровочные группы и матрица СКМ",
+                                    "path": "KaonDecay/CKM/L1"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "FCNC процессы и ЭТП",
+                            "items": [
+                                {
+                                    "title": "Эффективная теория поля",
+                                    "path": "KaonDecay/FCNC/L2"
+                                },
+                                {
+                                    "title": "FCNC процессы",
+                                    "path": "KaonDecay/FCNC/L2_1"
+                                },
+                                {
+                                    "title": "Перенормировка локальных операторов",
+                                    "path": "KaonDecay/FCNC/L3"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "graph": [
+        {
+            "path": "this/KaonDecay/CKM/L1",
+            "item_path": "0.2.0.0",
+            "R0": [],
+            "TC0": [],
+            "TR0": [],
+            "TC1": [],
+            "TR1": [],
+            "R1": []
+        },
+        {
+            "path": "this/KaonDecay/FCNC/L2",
+            "item_path": "0.2.1.0",
+            "R0": [],
+            "TC0": [],
+            "TR0": [],
+            "TC1": [],
+            "TR1": [],
+            "R1": []
+        },
+        {
+            "path": "this/KaonDecay/FCNC/L2_1",
+            "item_path": "0.2.1.1",
+            "R0": [
+                1
+            ],
+            "TC0": [
+                1
+            ],
+            "TR0": [
+                1
+            ],
+            "TC1": [
+                1
+            ],
+            "TR1": [
+                1
+            ],
+            "R1": [
+                1
+            ]
+        },
+        {
+            "path": "this/KaonDecay/FCNC/L3",
+            "item_path": "0.2.1.2",
+            "R0": [],
+            "TC0": [],
+            "TR0": [],
+            "TC1": [],
+            "TR1": [],
+            "R1": []
+        }
+    ],
+    "types": [
+        0
+    ]
+}
