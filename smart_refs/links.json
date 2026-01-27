@@ -1,14 +1,15 @@
 {
     "links": {
+        "KaonDecay/FCNC/L2": [],
         "KaonDecay/FCNC/L3": [],
+        "KaonDecay/CKM/L1": [],
         "KaonDecay/FCNC/L2_1": [
             {
                 "dest": "this/KaonDecay/FCNC/L2",
                 "type": 0
             }
         ],
-        "KaonDecay/CKM/L1": [],
-        "KaonDecay/FCNC/L2": []
+        "": []
     },
     "navigation": {
         "title": "Феноменология элементарных частиц",
