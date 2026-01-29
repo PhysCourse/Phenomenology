@@ -15,13 +15,13 @@
                     "path": "Киральная теория возмущения"
                 },
                 {
-                    "title": "CP-нарушения",
+                    "title": "3. CP-нарушения",
                     "items": [
                         {
                             "title": "CKM матрица",
                             "items": [
                                 {
-                                    "title": "Кварки, калибровочные группы и матрица СКМ",
+                                    "title": "3.1. Кварки, калибровочные группы и матрица СКМ",
                                     "path": "KaonDecay/CKM/L1"
                                 }
                             ]
@@ -34,12 +34,16 @@
                                     "path": "KaonDecay/FCNC/L2"
                                 },
                                 {
-                                    "title": "FCNC процессы",
+                                    "title": "3.2. FCNC процессы",
                                     "path": "KaonDecay/FCNC/L2_1"
                                 },
                                 {
-                                    "title": "Перенормировка локальных операторов",
+                                    "title": "3.3. Перенормировка локальных операторов",
                                     "path": "KaonDecay/FCNC/L3"
+                                },
+                                {
+                                    "title": "3.4. Распад каонов",
+                                    "path": "KaonDecay/FCNC/L4"
                                 }
                             ]
                         }
@@ -94,6 +98,16 @@
         {
             "path": "this/KaonDecay/FCNC/L3",
             "item_path": "0.2.1.2",
+            "R0": [],
+            "TC0": [],
+            "TR0": [],
+            "TC1": [],
+            "TR1": [],
+            "R1": []
+        },
+        {
+            "path": "this/KaonDecay/FCNC/L4",
+            "item_path": "0.2.1.3",
             "R0": [],
             "TC0": [],
             "TR0": [],
