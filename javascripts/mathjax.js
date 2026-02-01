@@ -1,9 +1,9 @@
 window.MathJax = {
-  loader: {load: ['[tex]/cancel','[tex]/physics','[tex]/color']},
+  loader: {load: ['[tex]/cancel','[tex]/physics','[tex]/color','[tex]/action']},
   tex: {
     inlineMath: [["\\(", "\\)"]],
     displayMath: [["\\[", "\\]"]],
-    packages: {'[+]': ['cancel','physics','color']},
+    packages: {'[+]': ['cancel','physics','color','action']},
     
     tags: 'ams',
     tagSide: 'right',
