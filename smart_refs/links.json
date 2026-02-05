@@ -1,15 +1,44 @@
 {
     "links": {
+        "KaonDecay/FCNC/L5": [
+            {
+                "dest": "this/KaonDecay/FCNC/L4",
+                "type": 0
+            },
+            {
+                "dest": "this/KaonDecay/FCNC/L5",
+                "type": 0
+            }
+        ],
+        "KaonDecay/FCNC/L4": [
+            {
+                "dest": "this/KaonDecay/FCNC/L2",
+                "type": 0
+            },
+            {
+                "dest": "this/KaonDecay/FCNC/L2_1",
+                "type": 0
+            },
+            {
+                "dest": "this/KaonDecay/FCNC/L3",
+                "type": 0
+            }
+        ],
         "KaonDecay/FCNC/L2": [],
-        "KaonDecay/FCNC/L3": [],
         "KaonDecay/CKM/L1": [],
+        "KaonDecay/FCNC/L3": [],
         "KaonDecay/FCNC/L2_1": [
+            {
+                "dest": "this/KaonDecay/CKM/L1",
+                "type": 0
+            },
             {
                 "dest": "this/KaonDecay/FCNC/L2",
                 "type": 0
             }
         ],
-        "": []
+        "": [],
+        "KaonDecay/FCNC/L5_1": []
     },
     "navigation": {
         "title": "Феноменология элементарных частиц",
@@ -23,13 +52,13 @@
                 "path": "Киральная теория возмущения"
             },
             {
-                "title": "CP-нарушения",
+                "title": "3. CP-нарушения",
                 "items": [
                     {
                         "title": "CKM матрица",
                         "items": [
                             {
-                                "title": "Кварки, калибровочные группы и матрица СКМ",
+                                "title": "3.1. Кварки, калибровочные группы и матрица СКМ",
                                 "path": "KaonDecay/CKM/L1"
                             }
                         ]
@@ -42,12 +71,20 @@
                                 "path": "KaonDecay/FCNC/L2"
                             },
                             {
-                                "title": "FCNC процессы",
+                                "title": "3.2. FCNC процессы",
                                 "path": "KaonDecay/FCNC/L2_1"
                             },
                             {
-                                "title": "Перенормировка локальных операторов",
+                                "title": "3.3. Перенормировка локальных операторов",
                                 "path": "KaonDecay/FCNC/L3"
+                            },
+                            {
+                                "title": "3.4. Перенормировка операторов в теории Ферми",
+                                "path": "KaonDecay/FCNC/L4"
+                            },
+                            {
+                                "title": "3.5. Распад каона",
+                                "path": "KaonDecay/FCNC/L5"
                             }
                         ]
                     }

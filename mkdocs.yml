@@ -1,6 +1,7 @@
 # Site name
 site_name: Феноменология элементарных частиц
-
+site_url: https://physcourse.github.io/Phenomenology/
+use_directory_urls: true
 # Navigation menu
 
 # Theme
@@ -166,6 +167,7 @@ plugins:
   #  - include_plotlyjs: cdn
   - preview-eq:
       max_level: 0
+      dolog: false
   - smart-refs:
       repos: 
         this:
@@ -187,12 +189,15 @@ extra_css:
 nav:
   - Нейтрино и осцилляции
   - Киральная теория возмущения
-  - CP-нарушения:
+  - 3. CP-нарушения:
     - CKM матрица:
-      - Кварки, калибровочные группы и матрица СКМ: KaonDecay/CKM/L1.md
+      - 3.1. Кварки, калибровочные группы и матрица СКМ: KaonDecay/CKM/L1.md
     - FCNC процессы и ЭТП:
       - Эффективная теория поля: KaonDecay/FCNC/L2.md
-      - FCNC процессы: KaonDecay/FCNC/L2_1.md
-      - Перенормировка локальных операторов: KaonDecay/FCNC/L3.md
+      - 3.2. FCNC процессы: KaonDecay/FCNC/L2_1.md
+      - 3.3. Перенормировка локальных операторов: KaonDecay/FCNC/L3.md
+      - 3.4. Перенормировка операторов в теории Ферми: KaonDecay/FCNC/L4.md
+      - 3.5. Распад каона: KaonDecay/FCNC/L5.md
 
-    
+extra:
+  generator: false
