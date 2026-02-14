@@ -664,6 +664,25 @@ function init() {
   // find element smart-refs-toc in document
   const toc_container = document.getElementById("smart-refs-toc");
   if (!toc_container) return;
+
+  const self_path = toc_container.getAttribute("thislocation")
+
+  const currentUrl = window.location.href;
+  const url = new URL(currentUrl);
+  if (self_path) {
+      // Удаляем selfPath из конца pathname
+      const path = url.pathname; // "/SubSite/somepage"
+      if (path.endsWith('/' + self_path) || path.endsWith('/' + self_path + '/')) {
+          url.pathname = path.replace('/' + self_path, '');
+      }
+  }
+  if (!url.pathname.endsWith('/')) {
+    url.pathname += '/';
+  }
+
+  window.BASE_URL = url
+
+  console.log("self_path = ",self_path)
   // create setting contatiner above toc
   const setting_container = document.createElement("div");
   setting_container.id = "smart-refs-settings";
@@ -677,7 +696,9 @@ function init() {
   
   toc_container.setAttribute("initialized","true");
 
-  fetch("/assets/smart-refs-plugin/smart-refs.json")
+  asset_url = new URL(window.BASE_URL)
+  asset_url.pathname += "assets/smart-refs-plugin/smart-refs.json"
+  fetch(asset_url)
     .then(response => response.json())
     .then(data => {
       // create graph
@@ -707,11 +728,10 @@ function init() {
       // set callbacks
       const app = new SmartRefApp(smartRefsGraph, settingBox, smartRefsToc, smartRefable);
     }).catch(error => {
-      console.error("Error loading index.json:", error);
+      console.error("Error loading smart-refs.json:", error);
     });
-
-
 }
+
 function ensureSmartRefs() {
   const m_toc = document.getElementById("smart-refs-toc"); 
   if (!m_toc) {
