@@ -69,6 +69,37 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "title": "4. Глубоко неупругие процессы",
+                    "items": [
+                        {
+                            "title": "Партонная модель",
+                            "items": [
+                                {
+                                    "title": "4.1. Рассеяиние электрона на мюоне и протоне",
+                                    "path": "DeepInelastic/Partons/L1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Приложения",
+                    "items": [
+                        {
+                            "title": "Таблица адронов",
+                            "path": "Appendix/ParticleTable"
+                        },
+                        {
+                            "title": "Константы",
+                            "path": "Appendix/Constants"
+                        },
+                        {
+                            "title": "Формулы",
+                            "path": "Appendix/Formulas"
+                        }
+                    ]
                 }
             ]
         }
@@ -295,6 +326,46 @@
                 6,
                 7
             ]
+        },
+        {
+            "path": "this/DeepInelastic/Partons/L1",
+            "item_path": "0.3.0.0",
+            "R0": [],
+            "TC0": [],
+            "TR0": [],
+            "TC1": [],
+            "TR1": [],
+            "R1": []
+        },
+        {
+            "path": "this/Appendix/ParticleTable",
+            "item_path": "0.4.0",
+            "R0": [],
+            "TC0": [],
+            "TR0": [],
+            "TC1": [],
+            "TR1": [],
+            "R1": []
+        },
+        {
+            "path": "this/Appendix/Constants",
+            "item_path": "0.4.1",
+            "R0": [],
+            "TC0": [],
+            "TR0": [],
+            "TC1": [],
+            "TR1": [],
+            "R1": []
+        },
+        {
+            "path": "this/Appendix/Formulas",
+            "item_path": "0.4.2",
+            "R0": [],
+            "TC0": [],
+            "TR0": [],
+            "TC1": [],
+            "TR1": [],
+            "R1": []
         }
     ],
     "types": [
