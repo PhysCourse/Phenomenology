@@ -32,7 +32,7 @@ document$.subscribe(() => {
 })
 
 /* kludge (костыль) to work mathjax with data-preview */
-/*
+
 let rendering = false;
 new MutationObserver((mutations) => {
   if (rendering || !window.MathJax?.typesetPromise) return;
@@ -47,4 +47,3 @@ new MutationObserver((mutations) => {
     }
   }
 }).observe(document.body, {childList: true, subtree: true});
-*/
