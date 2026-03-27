@@ -74,11 +74,36 @@
                     "title": "4. Глубоко неупругие процессы",
                     "items": [
                         {
-                            "title": "Партонная модель",
+                            "title": "Партонная модель, аннигиляция лептонов в адроны",
                             "items": [
                                 {
-                                    "title": "4.1. Рассеяиние электрона на мюоне и протоне",
+                                    "title": "4.1. Рассеяние электрона на мюоне и протоне",
                                     "path": "DeepInelastic/Partons/L1"
+                                },
+                                {
+                                    "title": "4.2. Аннигиляция лептонов в адроны. ИК расходимость в конечном состоянии",
+                                    "path": "DeepInelastic/Partons/L2"
+                                },
+                                {
+                                    "title": "4.3. Эволюция партонов, уравнения DGLAP",
+                                    "path": "DeepInelastic/Partons/L3"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Операторные разложения (OPE)",
+                            "items": [
+                                {
+                                    "title": "4.A. Операторное разложение (OPE)",
+                                    "path": "DeepInelastic/OPE/L4"
+                                },
+                                {
+                                    "title": "4.B. OPE и аннигиляция лептонов в адроны",
+                                    "path": "DeepInelastic/OPE/L5"
+                                },
+                                {
+                                    "title": "4.C. OPE и партонная модель",
+                                    "path": "DeepInelastic/OPE/L6"
                                 }
                             ]
                         }
@@ -330,6 +355,86 @@
         {
             "path": "this/DeepInelastic/Partons/L1",
             "item_path": "0.3.0.0",
+            "R0": [],
+            "TC0": [],
+            "TR0": [],
+            "TC1": [],
+            "TR1": [],
+            "R1": []
+        },
+        {
+            "path": "this/DeepInelastic/Partons/L2",
+            "item_path": "0.3.0.1",
+            "R0": [],
+            "TC0": [],
+            "TR0": [],
+            "TC1": [],
+            "TR1": [],
+            "R1": []
+        },
+        {
+            "path": "this/DeepInelastic/Partons/L3",
+            "item_path": "0.3.0.2",
+            "R0": [
+                10
+            ],
+            "TC0": [
+                10
+            ],
+            "TR0": [
+                10
+            ],
+            "TC1": [
+                10
+            ],
+            "TR1": [
+                10
+            ],
+            "R1": [
+                10
+            ]
+        },
+        {
+            "path": "this/DeepInelastic/OPE/L4",
+            "item_path": "0.3.1.0",
+            "R0": [
+                1,
+                3
+            ],
+            "TC0": [
+                1,
+                3
+            ],
+            "TR0": [
+                1,
+                3
+            ],
+            "TC1": [
+                1,
+                3
+            ],
+            "TR1": [
+                1,
+                3
+            ],
+            "R1": [
+                1,
+                3
+            ]
+        },
+        {
+            "path": "this/DeepInelastic/OPE/L5",
+            "item_path": "0.3.1.1",
+            "R0": [],
+            "TC0": [],
+            "TR0": [],
+            "TC1": [],
+            "TR1": [],
+            "R1": []
+        },
+        {
+            "path": "this/DeepInelastic/OPE/L6",
+            "item_path": "0.3.1.2",
             "R0": [],
             "TC0": [],
             "TR0": [],
