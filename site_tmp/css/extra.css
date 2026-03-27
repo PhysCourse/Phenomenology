@@ -1,0 +1,20 @@
+.md-typeset h1 {
+  color: var(--md-primary-fg-color);
+  border-bottom: 2px solid var(--md-primary-fg-color);
+  padding-bottom: 0.5rem;
+}
+
+
+.md-typeset h2 {
+  color: var(--md-accent-fg-color);
+  border-left: 4px solid var(--md-accent-fg-color);
+  padding-left: 1rem;
+}
+
+.md-typeset h3 {
+  color: #4CAF50;
+}
+/*
+.md-typeset h4 {
+  color: var(--md-default-fg-color--lighter);
+}*/

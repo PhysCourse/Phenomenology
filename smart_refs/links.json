@@ -1,44 +1,23 @@
 {
     "links": {
-        "KaonDecay/FCNC/L5": [
-            {
-                "dest": "this/KaonDecay/FCNC/L4",
-                "type": 0
-            },
-            {
-                "dest": "this/KaonDecay/FCNC/L5",
-                "type": 0
-            }
-        ],
-        "KaonDecay/FCNC/L4": [
-            {
-                "dest": "this/KaonDecay/FCNC/L2",
-                "type": 0
-            },
-            {
-                "dest": "this/KaonDecay/FCNC/L2_1",
-                "type": 0
-            },
-            {
-                "dest": "this/KaonDecay/FCNC/L3",
-                "type": 0
-            }
-        ],
-        "KaonDecay/FCNC/L2": [],
-        "KaonDecay/CKM/L1": [],
+        "KaonDecay/FCNC/L5": [],
+        "Appendix/Formulas": [],
+        "KaonDecay/FCNC/L4": [],
         "KaonDecay/FCNC/L3": [],
-        "KaonDecay/FCNC/L2_1": [
-            {
-                "dest": "this/KaonDecay/CKM/L1",
-                "type": 0
-            },
-            {
-                "dest": "this/KaonDecay/FCNC/L2",
-                "type": 0
-            }
-        ],
-        "": [],
-        "KaonDecay/FCNC/L5_1": []
+        "KaonDecay/CKM/L1": [],
+        "DeepInelastic/Partons/L2": [],
+        "Appendix/Constants": [],
+        "KaonDecay/FCNC/L2": [],
+        "DeepInelastic/OPE/L6": [],
+        "DeepInelastic/OPE/L4": [],
+        "KaonDecay/CP/L7": [],
+        "KaonDecay/CP/L8": [],
+        "DeepInelastic/Partons/L3": [],
+        "KaonDecay/FCNC/L2_1": [],
+        "KaonDecay/CP/L6": [],
+        "DeepInelastic/Partons/L1": [],
+        "Appendix/ParticleTable": [],
+        "DeepInelastic/OPE/L5": []
     },
     "navigation": {
         "title": "Феноменология элементарных частиц",
@@ -87,6 +66,79 @@
                                 "path": "KaonDecay/FCNC/L5"
                             }
                         ]
+                    },
+                    {
+                        "title": "CP нарушуния и смешивание нейтральных мезонов",
+                        "items": [
+                            {
+                                "title": "3.6. Смешивание нейтральных каонов",
+                                "path": "KaonDecay/CP/L6"
+                            },
+                            {
+                                "title": "3.7. Матричный элемент между мезоном и антимезоном",
+                                "path": "KaonDecay/CP/L7"
+                            },
+                            {
+                                "title": "3.8. Сравнение мезонов и CP-нарушение в них",
+                                "path": "KaonDecay/CP/L8"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "4. Глубоко неупругие процессы",
+                "items": [
+                    {
+                        "title": "Партонная модель, аннигиляция лептонов в адроны",
+                        "items": [
+                            {
+                                "title": "4.1. Рассеяние электрона на мюоне и протоне",
+                                "path": "DeepInelastic/Partons/L1"
+                            },
+                            {
+                                "title": "4.2. Аннигиляция лептонов в адроны. ИК расходимость в конечном состоянии",
+                                "path": "DeepInelastic/Partons/L2"
+                            },
+                            {
+                                "title": "4.3. Эволюция партонов, уравнения DGLAP",
+                                "path": "DeepInelastic/Partons/L3"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Операторные разложения (OPE)",
+                        "items": [
+                            {
+                                "title": "4.A. Операторное разложение (OPE)",
+                                "path": "DeepInelastic/OPE/L4"
+                            },
+                            {
+                                "title": "4.B. OPE и аннигиляция лептонов в адроны",
+                                "path": "DeepInelastic/OPE/L5"
+                            },
+                            {
+                                "title": "4.C. OPE и партонная модель",
+                                "path": "DeepInelastic/OPE/L6"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Приложения",
+                "items": [
+                    {
+                        "title": "Таблица адронов",
+                        "path": "Appendix/ParticleTable"
+                    },
+                    {
+                        "title": "Константы",
+                        "path": "Appendix/Constants"
+                    },
+                    {
+                        "title": "Формулы",
+                        "path": "Appendix/Formulas"
                     }
                 ]
             }

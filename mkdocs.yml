@@ -1,5 +1,7 @@
 # Site name
 site_name: Феноменология элементарных частиц
+site_description: Онлайн верся курса по феноменологии элементарных частиц.
+site_author: Демин С. В.
 site_url: https://physcourse.github.io/Phenomenology/
 use_directory_urls: true
 # Navigation menu
@@ -198,6 +200,25 @@ nav:
       - 3.3. Перенормировка локальных операторов: KaonDecay/FCNC/L3.md
       - 3.4. Перенормировка операторов в теории Ферми: KaonDecay/FCNC/L4.md
       - 3.5. Распад каона: KaonDecay/FCNC/L5.md
-
+    - CP нарушуния и смешивание нейтральных мезонов:
+      - 3.6. Смешивание нейтральных каонов: KaonDecay/CP/L6.md
+      - 3.7. Матричный элемент между мезоном и антимезоном: KaonDecay/CP/L7.md
+      - 3.8. Сравнение мезонов и CP-нарушение в них: KaonDecay/CP/L8.md
+  - 4. Глубоко неупругие процессы:
+    - Партонная модель, аннигиляция лептонов в адроны:
+      - 4.1. Рассеяние электрона на мюоне и протоне: DeepInelastic/Partons/L1.md
+      - 4.2. Аннигиляция лептонов в адроны. ИК расходимость в конечном состоянии: DeepInelastic/Partons/L2.md
+      - 4.3. Эволюция партонов, уравнения DGLAP: DeepInelastic/Partons/L3.md
+    - Операторные разложения (OPE):
+      - 4.A. Операторное разложение (OPE): DeepInelastic/OPE/L4.md
+      - 4.B. OPE и аннигиляция лептонов в адроны: DeepInelastic/OPE/L5.md
+      - 4.C. OPE и партонная модель: DeepInelastic/OPE/L6.md
+  - Приложения:
+    - Таблица адронов: Appendix/ParticleTable.md
+    - Константы: Appendix/Constants.md
+    - Формулы: Appendix/Formulas.md
 extra:
   generator: false
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX

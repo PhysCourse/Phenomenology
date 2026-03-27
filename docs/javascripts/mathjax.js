@@ -23,25 +23,42 @@ window.MathJax = {
   }
 };
 
+let isRendering = false;
+
 document$.subscribe(() => { 
-  MathJax.startup.output.clearCache()
-  MathJax.typesetClear()
-  MathJax.texReset()
-  MathJax.typesetPromise()
-  console.log("render event")
+  console.log('Checking for new formulas to render...');
+  if (isRendering || !window.MathJax?.typesetPromise) return;
+  
+  MathJax.startup.output.clearCache();
+  const hasNewFormulas = document.querySelector('.arithmatex:not(.MathJax-processed)');
+  
+  if (hasNewFormulas) {
+    isRendering = true;
+    MathJax.typesetPromise()
+      .then(() => {
+        isRendering = false;
+      })
+      .catch(err => {
+        console.log('MathJax error:', err);
+        isRendering = false;
+      });
+  }
 })
 
 /* kludge (костыль) to work mathjax with data-preview */
 
-let rendering = false;
+let rendering_mathjax = false;
 new MutationObserver((mutations) => {
-  if (rendering || !window.MathJax?.typesetPromise) return;
+  if (rendering_mathjax || !window.MathJax?.typesetPromise) return;
   
   for (let mutation of mutations) {
     for (let node of mutation.addedNodes) {
+
+      // query selector for .arithmatex  + md-search-result__article
       if (node.nodeType === 1 && node.querySelector?.('.arithmatex')) {
-        rendering = true;
-        MathJax.typesetPromise().finally(() => rendering = false);
+        console.log(node)
+        rendering_mathjax = true;
+        MathJax.typesetPromise().finally(() => rendering_mathjax = false);
         return;
       }
     }
