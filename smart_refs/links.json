@@ -1,34 +1,137 @@
 {
     "links": {
-        "KaonDecay/FCNC/L5": [],
+        "DeepInelastic/Partons/L3": [
+            {
+                "dest": "this/DeepInelastic/Partons/L2",
+                "type": 0
+            }
+        ],
         "Appendix/Formulas": [],
-        "KaonDecay/FCNC/L4": [],
-        "KaonDecay/FCNC/L3": [],
-        "KaonDecay/CKM/L1": [],
-        "DeepInelastic/Partons/L2": [],
-        "Appendix/Constants": [],
-        "KaonDecay/FCNC/L2": [],
-        "DeepInelastic/OPE/L6": [],
-        "DeepInelastic/OPE/L4": [],
-        "KaonDecay/CP/L7": [],
-        "KaonDecay/CP/L8": [],
-        "DeepInelastic/Partons/L3": [],
-        "KaonDecay/FCNC/L2_1": [],
-        "KaonDecay/CP/L6": [],
-        "DeepInelastic/Partons/L1": [],
         "Appendix/ParticleTable": [],
-        "DeepInelastic/OPE/L5": []
+        "KaonDecay/CP/L6": [
+            {
+                "dest": "this/KaonDecay/CKM/L1",
+                "type": 0
+            }
+        ],
+        "KaonDecay/FCNC/L2": [],
+        "DeepInelastic/OPE/L4": [
+            {
+                "dest": "this/KaonDecay/FCNC/L2",
+                "type": 0
+            },
+            {
+                "dest": "this/KaonDecay/FCNC/L3",
+                "type": 0
+            }
+        ],
+        "KaonDecay/FCNC/L5": [
+            {
+                "dest": "this/KaonDecay/FCNC/L4",
+                "type": 0
+            },
+            {
+                "dest": "this/KaonDecay/FCNC/L5",
+                "type": 0
+            }
+        ],
+        "DeepInelastic/OPE/L5": [
+            {
+                "dest": "this/DeepInelastic/OPE/L4",
+                "type": 0
+            }
+        ],
+        "KaonDecay/CKM/L1": [],
+        "DeepInelastic/OPE/L6": [
+            {
+                "dest": "this/DeepInelastic/OPE/L4",
+                "type": 0
+            },
+            {
+                "dest": "this/DeepInelastic/Partons/L1",
+                "type": 0
+            },
+            {
+                "dest": "this/DeepInelastic/Partons/L3",
+                "type": 0
+            }
+        ],
+        "KaonDecay/CP/L7": [
+            {
+                "dest": "this/KaonDecay/CP/L6",
+                "type": 0
+            },
+            {
+                "dest": "this/KaonDecay/FCNC/L2_1",
+                "type": 0
+            },
+            {
+                "dest": "this/KaonDecay/FCNC/L5",
+                "type": 0
+            }
+        ],
+        "Pions/L1": [],
+        "Neutrino/L1": [],
+        "KaonDecay/FCNC/L2_1": [
+            {
+                "dest": "this/KaonDecay/CKM/L1",
+                "type": 0
+            },
+            {
+                "dest": "this/KaonDecay/FCNC/L2",
+                "type": 0
+            }
+        ],
+        "DeepInelastic/Partons/L1": [],
+        "KaonDecay/FCNC/L3": [],
+        "DeepInelastic/Partons/L2": [],
+        "KaonDecay/FCNC/L4": [
+            {
+                "dest": "this/KaonDecay/FCNC/L2",
+                "type": 0
+            },
+            {
+                "dest": "this/KaonDecay/FCNC/L2_1",
+                "type": 0
+            },
+            {
+                "dest": "this/KaonDecay/FCNC/L3",
+                "type": 0
+            }
+        ],
+        "KaonDecay/CP/L8": [
+            {
+                "dest": "this/KaonDecay/CP/L6",
+                "type": 0
+            },
+            {
+                "dest": "this/KaonDecay/CP/L7",
+                "type": 0
+            }
+        ],
+        "Appendix/Constants": [],
+        "": []
     },
     "navigation": {
         "title": "Феноменология элементарных частиц",
         "items": [
             {
-                "title": null,
-                "path": "Нейтрино и осцилляции"
+                "title": "Нейтрино и осцилляции",
+                "items": [
+                    {
+                        "title": "TODO",
+                        "path": "Neutrino/L1"
+                    }
+                ]
             },
             {
-                "title": null,
-                "path": "Киральная теория возмущения"
+                "title": "Киральная теория возмущения",
+                "items": [
+                    {
+                        "title": "TODO",
+                        "path": "Pions/L1"
+                    }
+                ]
             },
             {
                 "title": "3. CP-нарушения",

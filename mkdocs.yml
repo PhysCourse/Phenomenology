@@ -8,6 +8,8 @@ use_directory_urls: true
 
 # Theme
 theme:
+  logo: logo-d.svg
+  favicon: logo-l.svg
   name: material
   features:
     - navigation.instant.preview
@@ -34,6 +36,7 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Переключить на тёмную тему
+      
     # Вторая (альтернативная) цветовая схема
     - scheme: slate
       primary: deep purple
@@ -176,7 +179,6 @@ plugins:
           repo: "https://github.com/PhysCourse/Phenomenology"
           url: ""
   - search # Добавляет полнотекстовый поиск (включён по умолчанию)
-  - mkdocs-video
   - minify: # !pip install mkdocs-minify-plugin
       minify_html: true
 
@@ -189,8 +191,10 @@ extra_javascript:
 extra_css:
   - css/extra.css
 nav:
-  - Нейтрино и осцилляции
-  - Киральная теория возмущения
+  - Нейтрино и осцилляции:
+    - TODO: Neutrino/L1.md
+  - Киральная теория возмущения:
+    - TODO: Pions/L1.md
   - 3. CP-нарушения:
     - CKM матрица:
       - 3.1. Кварки, калибровочные группы и матрица СКМ: KaonDecay/CKM/L1.md
