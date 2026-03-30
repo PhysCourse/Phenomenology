@@ -254,7 +254,7 @@ class SmartRefsToc{
           const link = document.createElement("a");
           link.textContent = item.title || nodeId;
 		  // document.baseURI is uri for page, need uri for root
-          link.href = resolvePageUrl(window.location.origin, item.path);
+          link.href = resolvePageUrl(window.BASE_URL.href, item.path);
           link.target = "_self";
 
           row.append(cb, link);
@@ -550,7 +550,7 @@ class SmartRefTable{
         }
         const  cell_text = page_info.title;
         const content_info = this.content[page_info.page_path[0]];
-        const site_url = content_info.alias == "this" ? window.location.origin :
+        const site_url = content_info.alias == "this" ? window.BASE_URL.href :
           new URL(normalizeUrl(this.content[page_info.page_path[0]].url)).origin;
         //return ref with cell_text and site_url
         const a = document.createElement("a");
@@ -669,17 +669,16 @@ function init() {
 
   const currentUrl = window.location.href;
   const url = new URL(currentUrl);
-  if (self_path) {
-      // Удаляем selfPath из конца pathname
-      const path = url.pathname; // "/SubSite/somepage"
-      if (path.endsWith('/' + self_path) || path.endsWith('/' + self_path + '/')) {
-          url.pathname = path.replace('/' + self_path, '');
-      }
+  const path = url.pathname; // "/SubSite/somepage"
+  if (path.endsWith('/' + self_path) || path.endsWith('/' + self_path + '/')) {
+      url.pathname = path.replace('/' + self_path, '');
   }
   if (!url.pathname.endsWith('/')) {
     url.pathname += '/';
   }
-
+  url.hash=""
+  url.search = ""
+  
   window.BASE_URL = url
 
   console.log("self_path = ",self_path)
