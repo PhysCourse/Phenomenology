@@ -659,7 +659,7 @@ class SmartRefApp{
  * TOC RENDERING
  *************************************************/
 
-function init() {
+function init_smart_refs() {
   console.log("smart-refs: init");
   // find element smart-refs-toc in document
   const toc_container = document.getElementById("smart-refs-toc");
@@ -678,7 +678,7 @@ function init() {
   }
   url.hash=""
   url.search = ""
-  
+
   window.BASE_URL = url
 
   console.log("self_path = ",self_path)
@@ -739,8 +739,8 @@ function ensureSmartRefs() {
   if(m_toc.getAttribute("initialized") == "true"){
 	return;
   }
-  init();
+  init_smart_refs();
 }
-document.addEventListener("DOMContentLoaded", ensureSmartRefs);
+window.addEventListener("DOMContentLoaded", ensureSmartRefs);
 window.addEventListener("hashchange", ensureSmartRefs);
 window.addEventListener("popstate", ensureSmartRefs);
