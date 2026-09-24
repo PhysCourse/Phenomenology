@@ -165,7 +165,8 @@ markdown_extensions:
   #- hooks/autoref_hook.py
 
 plugins:
-  - glightbox
+  - glightbox:
+      background: none
   - tags 
   # - plotly: # Отображает ```plotly блоки как графики !pip install mkdocs-plotly-plugin
   #  - offline: true         # Использовать локальную библиотеку
@@ -191,9 +192,13 @@ extra_javascript:
 extra_css:
   - css/extra.css
 nav:
-  - Нейтрино и осцилляции:
-    - TODO: Neutrino/L1.md
-  - Киральная теория возмущения:
+  - 1. Нейтрино и осцилляции:
+    - 1.1 Фермионы в теории поля: Neutrino/L1.md
+    - 1.2 Лептонный сектор Стандартной Модели: Neutrino/L2.md
+    - 1.3 Нейтринные осцилляции: Neutrino/L3.md
+    - 1.4 Взаимодействия нейтрино, Нейтринные осцилляции в веществе: Neutrino/L4.md
+    - 1.5 Источники нейтрино и эксперименты по обнаружению: Neutrino/L5.md
+  - 2. Киральная теория возмущения:
     - TODO: Pions/L1.md
   - 3. CP-нарушения:
     - CKM матрица:
@@ -217,6 +222,9 @@ nav:
       - 4.A. Операторное разложение (OPE): DeepInelastic/OPE/L4.md
       - 4.B. OPE и аннигиляция лептонов в адроны: DeepInelastic/OPE/L5.md
       - 4.C. OPE и партонная модель: DeepInelastic/OPE/L6.md
+    - Мягкая Коллинеарная теория (SCET):
+      - 4.4. Введение, чудеса метода регионов: DeepInelastic/SCET/L1.md
+      - 4.5. Простейшая скалярная SCET: DeepInelastic/SCET/L2.md
   - Приложения:
     - Таблица адронов: Appendix/ParticleTable.md
     - Константы: Appendix/Constants.md

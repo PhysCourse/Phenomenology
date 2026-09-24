@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
+  <rect width="900" height="360" fill="#fffdf7"/>
+  <text x="210" y="48" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="28" text-anchor="middle">Normal ordering</text>
+  <text x="690" y="48" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="28" text-anchor="middle">Inverted ordering</text>
+
+  <line x1="80" y1="300" x2="340" y2="300" stroke="#64748b" stroke-width="3"/>
+  <line x1="80" y1="260" x2="340" y2="260" stroke="#64748b" stroke-width="3" stroke-dasharray="6 6"/>
+  <line x1="80" y1="110" x2="340" y2="110" stroke="#0284c7" stroke-width="6"/>
+
+  <line x1="560" y1="140" x2="820" y2="140" stroke="#0284c7" stroke-width="6"/>
+  <line x1="560" y1="100" x2="820" y2="100" stroke="#64748b" stroke-width="3" stroke-dasharray="6 6"/>
+  <line x1="560" y1="290" x2="820" y2="290" stroke="#d97706" stroke-width="6"/>
+
+  <text x="352" y="308" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="24">m1</text>
+  <text x="352" y="268" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="24">m2</text>
+  <text x="352" y="118" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="24">m3</text>
+
+  <text x="832" y="148" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="24">m1</text>
+  <text x="832" y="108" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="24">m2</text>
+  <text x="832" y="298" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="24">m3</text>
+
+  <line x1="390" y1="280" x2="390" y2="118" stroke="#b45309" stroke-width="3" marker-start="url(#arrowL)" marker-end="url(#arrowL)"/>
+  <text x="408" y="205" fill="#b45309" font-family="Segoe UI, Arial, sans-serif" font-size="22">|dm32^2| large</text>
+
+  <line x1="870" y1="280" x2="870" y2="108" stroke="#b45309" stroke-width="3" marker-start="url(#arrowL)" marker-end="url(#arrowL)"/>
+  <text x="760" y="205" fill="#b45309" font-family="Segoe UI, Arial, sans-serif" font-size="22">|dm32^2| large</text>
+
+  <line x1="120" y1="292" x2="120" y2="268" stroke="#15803d" stroke-width="3" marker-start="url(#arrowG)" marker-end="url(#arrowG)"/>
+  <text x="138" y="286" fill="#15803d" font-family="Segoe UI, Arial, sans-serif" font-size="20">dm21^2 small</text>
+
+  <line x1="600" y1="132" x2="600" y2="108" stroke="#15803d" stroke-width="3" marker-start="url(#arrowG)" marker-end="url(#arrowG)"/>
+  <text x="618" y="126" fill="#15803d" font-family="Segoe UI, Arial, sans-serif" font-size="20">dm21^2 small</text>
+
+  <defs>
+    <marker id="arrowL" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#b45309"/>
+    </marker>
+    <marker id="arrowG" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#15803d"/>
+    </marker>
+  </defs>
+</svg>

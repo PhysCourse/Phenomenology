@@ -5,3 +5,9 @@
 ```smartrefs
 element="toc"
 ```
+
+## Демонстрация
+
+```smartrefs
+element="table"
+```

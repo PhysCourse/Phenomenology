@@ -216,6 +216,73 @@
 
 ## Тождества с гамма матрицами
 
+### Основные свойства
+
+Определение $\gamma$-матриц
+
+$$
+    \label{eq:gammadef}
+    \gamma^{\mu} = \begin{pmatrix}
+        0 & \sigma^\mu \\ 
+        \bar \sigma^\mu & 0
+    \end{pmatrix}
+$$
+
+где 
+
+$$
+    \sigma^\mu = (1, \vec{\sigma}) \quad
+    \bar \sigma^\mu = (1, -\vec{\sigma}) \quad 
+$$
+
+$$
+    \label{eq:gammadef5}
+    \gamma^5 = i \gamma^0 \gamma^1 \gamma^2 \gamma^3 = 
+    -\frac{i}{4!} \epsilon_{\mu\nu\lambda\rho}
+    \gamma^\mu \gamma^\nu \gamma^\lambda \gamma^\rho
+$$
+
+$$
+    \label{eq:gamma5view}
+    \gamma^5 = \begin{pmatrix}
+        -1 & 0 \\ 
+        0 & 1
+    \end{pmatrix}
+$$
+
+$$
+    \label{eq:gammadef}
+    \begin{split}
+    \{ \gamma^{\mu} \gamma^\nu \} &= 2g^{\mu\nu} \\
+    \gamma^{\mu} \gamma^\nu &= 2 g^{\mu\nu} - \gamma^\nu \gamma^{\mu}
+    \end{split}
+$$
+
+$$
+    \label{eq:gammatraces}
+    \begin{split}
+    \Tr [\hat{1}] &= 4 \\
+    \Tr [ \gamma^{\mu} \gamma^\nu ] &= 4 g^{\mu\nu} \\
+    \Tr [ \gamma^{\mu} \gamma^\nu \gamma^{\lambda} \gamma^\rho ] &= 
+    4( g^{\mu \nu}  g^{\lambda \rho} +  g^{\mu \rho}  g^{\nu \lambda } - 
+    g^{\mu \lambda}  g^{\nu \rho}
+    ) \\
+    \Tr[ \gamma^5 \gamma^{\mu}\gamma^{\nu} \gamma^{\lambda} \gamma^{\rho} ] &=
+    -4i \epsilon^{\mu\nu\lambda\rho}
+    \end{split}
+$$
+
+Свойство $\Tr [\hat{1}] = 4$ выполняется также и в размерной регуляризации и там справа стоит $4$ а не $d$.
+
+В наших обрзначениях $\epsilon^{0123} = +1$ а $\epsilon_{0123} = -1$. Выполняется тождество:
+
+$$
+    \epsilon^{\mu\nu\alpha\beta} \epsilon_{\lambda\rho \alpha\beta} = 
+    -2 (\delta^{\mu}_{\lambda}\delta^{\nu}_{\rho} - 
+    \delta^{\mu}_{\rho}\delta^{\nu}_{\lambda})
+$$
+
+
 ### Гамма матрицы в обкладках
 
 \[

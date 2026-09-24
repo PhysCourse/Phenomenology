@@ -606,7 +606,11 @@ class SmartRefApp{
   }
   
   update(){
-    this.encodeStateToQuery();
+    try{
+      this.encodeStateToQuery();
+    } catch(e){
+      console.error("Error encoding state to query:", e);
+    }
     const forced_toggled = this.smartRefsToc.toggled_nodes;
     const {indicies:toggled_list,set:auto_toggled} = this.graph.get_dependent_elements(
       forced_toggled,
@@ -659,7 +663,7 @@ class SmartRefApp{
  * TOC RENDERING
  *************************************************/
 
-function init() {
+function init_smart_refs() {
   console.log("smart-refs: init");
   // find element smart-refs-toc in document
   const toc_container = document.getElementById("smart-refs-toc");
@@ -678,7 +682,7 @@ function init() {
   }
   url.hash=""
   url.search = ""
-  
+
   window.BASE_URL = url
 
   console.log("self_path = ",self_path)
@@ -739,8 +743,61 @@ function ensureSmartRefs() {
   if(m_toc.getAttribute("initialized") == "true"){
 	return;
   }
-  init();
+  init_smart_refs();
 }
-document.addEventListener("DOMContentLoaded", ensureSmartRefs);
+// Ensure handler runs even if this script is loaded after DOMContentLoaded.
+if (document.readyState !== "loading") {
+  // DOM already parsed — run immediately
+  ensureSmartRefs();
+} else {
+  window.addEventListener("DOMContentLoaded", ensureSmartRefs);
+}
 window.addEventListener("hashchange", ensureSmartRefs);
 window.addEventListener("popstate", ensureSmartRefs);
+
+// Debounce helper
+function debounce(fn, wait){
+  let t = null;
+  return function(...args){
+    if(t) clearTimeout(t);
+    t = setTimeout(()=>{ fn.apply(this,args); t = null; }, wait);
+  }
+}
+
+function setupNavigationObserver(){
+  const target = document.querySelector('main') || document.getElementById('content') || document.body;
+  if(!target) return;
+
+  const observer = new MutationObserver(debounce((mutations)=>{
+    ensureSmartRefs();
+  }, 100));
+
+  try{
+    observer.observe(target, { childList: true, subtree: true });
+  } catch(e){
+    console.warn('smart-refs: cannot observe navigation mutations', e);
+  }
+
+  // Common SPA navigation events — listen just in case the theme emits them
+  window.addEventListener('pjax:complete', ensureSmartRefs);
+  window.addEventListener('turbolinks:load', ensureSmartRefs);
+  window.addEventListener('page:change', ensureSmartRefs);
+}
+
+// Try to set up observer immediately
+setupNavigationObserver();
+
+// If MkDocs Material provides rxjs observables, subscribe to them
+try{
+  if (window.document$ && typeof window.document$.subscribe === 'function'){
+    window.document$.subscribe(debounce(()=> ensureSmartRefs(), 50));
+  }
+  if (window.location$ && typeof window.location$.subscribe === 'function'){
+    window.location$.subscribe(debounce(()=> ensureSmartRefs(), 50));
+  }
+  if (window.target$ && typeof window.target$.subscribe === 'function'){
+    window.target$.subscribe(debounce(()=> ensureSmartRefs(), 50));
+  }
+}catch(e){
+  console.warn('smart-refs: could not subscribe to MkDocs observables', e);
+}
