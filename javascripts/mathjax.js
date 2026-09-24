@@ -1,4 +1,11 @@
 window.MathJax = {
+  startup:{
+      ready(){MathJax.startup.defaultReady();
+      const {STATE} = MathJax._.core.MathItem;
+      const defs = document.querySelector('script[type="text/x-tex-macros"]');
+      MathJax.tex2mml(defs?.textContent || '');
+    }
+  },
   loader: {load: ['[tex]/cancel','[tex]/physics','[tex]/color','[tex]/action','[tex]/mathtools']},
   tex: {
     inlineMath: [["\\(", "\\)"]],
